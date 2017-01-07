@@ -140,6 +140,15 @@ Eksempel på brug i index.html
 
 // Question 3B ------ Explain and demonstrate ways to debug Hybrid Mobile Applications Running on a real device
 /*
+Først kør server. Så åben chrome på både telefon og pc. Så åben f12 og gå til options - more tools - remote devices.
+Vælg dit device og så gå til den url. Se den nederst på siden og tryk inspect.
+
+(Hvis ionic starter på localhost brug dette for at få den til at køre på IP addresse:
+ ionic serve --address <ip adressen>
+
+ eller tilbage til localhost:
+ ionic serve --address localhost
+
 
  */
 

@@ -107,6 +107,13 @@ angular.module('todo', ['ionic'])
         });
     };
 
+    $scope.createItems = function () {
+      $http({method: 'POST', url: 'http://localhost:3000/create'})
+        .success(function (data) {
+
+        });
+    };
+
 
     // No need for testing data anymore
     $scope.tasks = [];
