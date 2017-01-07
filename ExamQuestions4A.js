@@ -80,7 +80,60 @@ Eksempel på brug i index.html
 // and how CORS problems were solved (if any)
 
 
+/*
+
+--------- How to start ------------
+
+ Left-click server.js to run the server, then in terminal type: Ionic serve.
+ It opens a site for you where you can test it.
+
+
+ */
+
+
+// app.js kalder vores server med nedenstående kode:
+/*
+
+
+ $scope.getItems = function () {
+ $http({method: 'GET', url: 'http://localhost:3000/get'})
+ .success(function (data) {
+ $scope.setmarker(data);
+ });
+ };
+
+ og vi kom forbi CORS problemmet med denne middleware kode:
+
+ app.use(function(req, res, next) {
+ res.header("Access-Control-Allow-Origin", "*");
+ res.header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+
+ next();
+ });
+
+ Koden gør at du kalder denne funktion på alle app.* kald.
+
+ */
+
+
 
 // Question 6 ------  Explain, with focus on location, technologies related to locations used on:
-//   Your app (client side)
-//   Your backend
+
+/*
+
+ --------- How to start ------------
+
+ Left-click server.js to run the server, then in terminal type: Ionic serve.
+ It opens a site for you where you can test it.
+
+ //   Your app (client side)
+ Vi har brugt google API og får vores latitude og longtitude fra serveren og opretter derefter markerer
+ baseret på deres lokaltionation
+
+
+ //   Your backend
+ Backenden sender latitude og longtitude til clinenten.
+ */
+
+
