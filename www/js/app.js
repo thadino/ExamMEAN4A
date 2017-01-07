@@ -76,7 +76,8 @@ angular.module('todo', ['ionic'])
               var marker = new google.maps.Marker({
                 map: map,
                 animation: google.maps.Animation.DROP,
-                position: tempLatLng
+                position: tempLatLng,
+                title: d.name + ", lat: " + d.lat + ", long: " + d.long
               });
             }
           )

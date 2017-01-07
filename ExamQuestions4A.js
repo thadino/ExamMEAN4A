@@ -2,7 +2,7 @@
  * Created by Dino on 1/7/2017.
  */
 
-// Question 1 ------ Explain the concept of Hybrid Mobile App Development
+// Question 1 ------ Explain the concept of Hybrid Mobile App Development (A + B)
 // http://js-plaul.rhcloud.com/hybrid1/hybrid1.html
  /*
 
@@ -24,6 +24,7 @@ Fjerde lag er native funktioner som bliver brugt af dit udviklingsframework.
  */
 
 // Question 2 ------  Explain the Pros & Cons of using Hybrid Mobile App Development compared to Native App Development
+// (A + B)
 
 /*
 
@@ -38,8 +39,7 @@ Hybrid App er mere frontend kodnings orienteret.
  */
 
 
-// Question 3 ------ Explain about the "building blocks" involved in an ionic Hybrid Application
-
+// Question 3 ------ Explain about the "building blocks" involved in an ionic Hybrid Application (A ONLY)
 /*
 
  Komponenter i Ionic er genbruglige elementer som fungerer som building blocks.
@@ -49,7 +49,7 @@ Hybrid App er mere frontend kodnings orienteret.
 */
 
 // Question 4 ------ Explain, using an example you have implemented, the "fundamentals" of an ionic application.
-
+// (A + B)
 /*
 
 indtast "ionic serve" i terminalen og hit enter.
@@ -77,7 +77,7 @@ Eksempel på brug i index.html
  */
 
 // Question 5 ------  Explain using an example how your Hybrid Application communicates with a backend
-// and how CORS problems were solved (if any)
+// and how CORS problems were solved (if any) (A ONLY)
 
 
 /*
@@ -119,7 +119,7 @@ Eksempel på brug i index.html
 
 
 // Question 6 ------  Explain, with focus on location, technologies related to locations used on:
-
+// (A + B)
 /*
 
  --------- How to start ------------
@@ -136,4 +136,19 @@ Eksempel på brug i index.html
  Backenden sender latitude og longtitude til clinenten.
  */
 
+
+
+// Question 3B ------ Explain and demonstrate ways to debug Hybrid Mobile Applications Running on a real device
+/*
+
+ */
+
+// Question 4B ------ Explain how and why, it is possible for a Hybrid Application to access native phone
+// devices like location, calendar etc.
+
+/*
+Hybrid laves i en native container, dvs at du kan bruge de native funktionaliter som du normalt bruger på en mobil.
+Se: https://developer.salesforce.com/page/Native,_HTML5,_or_Hybrid:_Understanding_Your_Mobile_Application_Development_Options
+
+ */
 
