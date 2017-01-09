@@ -13,9 +13,11 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 <script src="js/app.js"></script>
     <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
-    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
     <script src="cordova.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
   </head>
 <body ng-app="todo" ng-controller="TodoCtrl">
   <ion-side-menus>
@@ -37,7 +39,7 @@
         </ion-item>
       </ion-list>
 
-      <ion-content ng-controller="MapController">
+      <ion-content>
       <div id="map" data-tap-disabled="true"></div>
     </ion-content>
 

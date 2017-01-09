@@ -6,7 +6,7 @@
 // http://js-plaul.rhcloud.com/hybrid1/hybrid1.html
  /*
 
-En hybrid mobil applikation gør det muligt at brugte HTML5 apps inde i en native container.
+En hybrid mobil applikation bruger HTML5 i en native container.
 Dette combinere de bedste og dårlige elementer fra native og Html5Apps.
 
 
@@ -36,7 +36,11 @@ Hybrid App er meget hurtigere at teste, i forhold til emulationen af en telefon 
 Cons:
 Langsom performance hvor Native er hurtig.
 Hybrid App er mere frontend kodnings orienteret.
+MobilePay er feks ikke supported.
  */
+
+
+
 
 
 // Question 3 ------ Explain about the "building blocks" involved in an ionic Hybrid Application (A ONLY)
@@ -47,6 +51,10 @@ Hybrid App er mere frontend kodnings orienteret.
  Alle Ionic komponenter tilpasser sig automatisk til den platform som kører din applikation, også kaldt Platform Continuity.
 
 */
+
+
+
+
 
 // Question 4 ------ Explain, using an example you have implemented, the "fundamentals" of an ionic application.
 // (A + B)
@@ -76,6 +84,11 @@ Eksempel på brug i index.html
  </ion-side-menu-content>
  */
 
+
+
+
+
+
 // Question 5 ------  Explain using an example how your Hybrid Application communicates with a backend
 // and how CORS problems were solved (if any) (A ONLY)
 
@@ -102,7 +115,7 @@ Eksempel på brug i index.html
  });
  };
 
- og vi kom forbi CORS problemmet med denne middleware kode:
+ og vi kom forbi CORS problemet med denne middleware kode:
 
  app.use(function(req, res, next) {
  res.header("Access-Control-Allow-Origin", "*");
@@ -118,6 +131,8 @@ Eksempel på brug i index.html
 
 
 
+
+
 // Question 6 ------  Explain, with focus on location, technologies related to locations used on:
 // (A + B)
 /*
@@ -127,14 +142,17 @@ Eksempel på brug i index.html
  Left-click server.js to run the server, then in terminal type: Ionic serve.
  It opens a site for you where you can test it.
 
- //   Your app (client side)
+ //  Your app (client side)
  Vi har brugt google API og får vores latitude og longtitude fra serveren og opretter derefter markerer
  baseret på deres lokaltionation
 
 
- //   Your backend
- Backenden sender latitude og longtitude til clinenten.
+ //  Your backend
+ Backenden (mongoDB) sender latitude og longtitude til clienten.
  */
+
+
+
 
 
 
@@ -159,5 +177,9 @@ Vælg dit device og så gå til den url. Se den nederst på siden og tryk inspec
 Hybrid laves i en native container, dvs at du kan bruge de native funktionaliter som du normalt bruger på en mobil.
 Se: https://developer.salesforce.com/page/Native,_HTML5,_or_Hybrid:_Understanding_Your_Mobile_Application_Development_Options
 
+(Det er hvad cordova og phonegap gør. Henter native funktionality og exposer den til ionic/javascript)
+
+
+Vores eksempel kode virker ikke i Chrome, da Chrome ikke tillader location lige nu.
  */
 
